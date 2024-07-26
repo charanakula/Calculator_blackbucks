@@ -1,0 +1,96 @@
+/* Body */
+body {
+  background-color: #222; /* Matt black background */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically (optional) */
+  min-height: 100vh; /* Set minimum viewport height for full-page centering */
+}
+
+/* Calculator container */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #3ee9be; /* Light green background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Display area */
+.display {
+  background-color: #ffffff; /* Light background for better contrast */
+  padding: 20px;
+  font-size: 32px; /* Larger font size for readability */
+  text-align: right;
+  color: #333; /* Darker text for contrast */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow */
+  width: 100%; /* Match calculator width */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+/* Button container */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ensure 4 buttons per row */
+  gap: 10px; /* Increased gap for spacing */
+  margin-top: 20px;
+}
+
+/* General button styles */
+.button {
+  padding: 20px;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 18px; /* Larger font size */
+  /* Adjust background and text color based on button type */
+  background-color: #e0e0e0; /* Light gray for numbers and decimal (default) */
+  color: #333; /* Dark text for contrast */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #f2f25b; /* Lighten button on hover */
+}
+
+/* Operation buttons (optional styles) */
+.operation {
+  background-color: #f0ad4e; /* Red background for operations */
+  color: #fff; /* White text for contrast */
+}
+
+.operation:hover {
+  background-color: #d0d0d0; /* Slightly darker hover for operation buttons */
+}
+
+/* Active button (optional visual cue for pressed button) */
+.button.active {
+  background-color: #ccc; /* Change color or add a border to indicate press */
+}
+
+/* Optional: Error handling (visual cue for error) */
+.display.error {
+  background-color: #f9f0f0; /* Light red for error messages */
+  color: #900; /* Darker red for error text */
+}
+
+/* Additional styling (optional) */
+.App { /* Assuming this is a parent container for the calculator */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Adjust width for desired size */
+  padding: 20px;
+  background-color: #f2f2f2; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
